@@ -1,0 +1,15 @@
+<template name="MasterLayout">
+  <div class="ui menu">
+      <div class="header item">
+          {{#linkTo route="home"}} 
+          Quick Ticket 
+          {{/linkTo}}
+       </div>
+      
+      <a href="{{pathFor route='newTicket'}}" class="item">
+          <button class="ui teal button">New Ticket</button>
+      </a>
+      
+  </div>
+  {{> yield}}
+</template>
